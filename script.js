@@ -5,7 +5,7 @@ function isSumGreaterThan100(params) {
     for (let i = 0; i < params.length; i++) {
         sum += params[i];
     }
-    console.log(sum > 100);
+    document.getElementById("result").innerText = sum > 100;
 }
 
 function findMaxNumber(params) {
@@ -15,7 +15,7 @@ function findMaxNumber(params) {
             max = params[i];
         }
     }
-    console.log("Maximum number in array:", max);
+    document.getElementById("result").innerText = "Maximum number in array: " + max;
 }
 
 function findMinNumber(params) {
@@ -25,7 +25,7 @@ function findMinNumber(params) {
             min = params[i];
         }
     }
-    console.log("Minimum number in array:", min);
+    document.getElementById("result").innerText = "Minimum number in array: " + min;
 }
 
 function printArrayReverse(params) {
@@ -33,7 +33,7 @@ function printArrayReverse(params) {
     for (let i = params.length - 1; i >= 0; i--) {
         reversedArray.push(params[i]);
     }
-    console.log("Array in reverse order:", reversedArray);
+    document.getElementById("result").innerText = "Array in reverse order: " + reversedArray.join(", ");
 }
 
 function printEvenNumbers(params) {
@@ -43,7 +43,7 @@ function printEvenNumbers(params) {
             evenNumbers.push(params[i]);
         }
     }
-    console.log("Even numbers in array:", evenNumbers);
+    document.getElementById("result").innerText = "Even numbers in array: " + evenNumbers.join(", ");
 }
 
 function printSumOfArray(params) {
@@ -51,19 +51,21 @@ function printSumOfArray(params) {
     for (let i = 0; i < params.length; i++) {
         sum += params[i];
     }
-    console.log("Sum of the array:", sum);
+    document.getElementById("result").innerText = "Sum of the array: " + sum;
 }
 
 function fizzBuzz() {
-    for (let i = 0; i <= 100; i++) {
+    let result = [];
+    for (let i = 1; i <= 100; i++) {
         if (i % 15 === 0) {
-            console.log("FizzBuzz");
+            result.push("FizzBuzz");
         } else if (i % 3 === 0) {
-            console.log("Fizz");
+            result.push("Fizz");
         } else if (i % 5 === 0) {
-            console.log("Buzz");
+            result.push("Buzz");
         } else {
-            console.log(i);
+            result.push(i);
         }
     }
+    document.getElementById("result").innerText = result.join(", ");
 }
