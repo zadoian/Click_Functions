@@ -5,7 +5,9 @@ function isSumGreaterThan100(params) {
     for (let i = 0; i < params.length; i++) {
         sum += params[i];
     }
-    document.getElementById("result").innerText = sum > 100;
+    const result = sum > 100;
+    document.getElementById("result").innerText = result;
+    console.log(result);
 }
 
 function findMaxNumber(params) {
@@ -15,7 +17,9 @@ function findMaxNumber(params) {
             max = params[i];
         }
     }
-    document.getElementById("result").innerText = "Maximum number in array: " + max;
+    const result = "Maximum number in array: " + max;
+    document.getElementById("result").innerText = result;
+    console.log(result);
 }
 
 function findMinNumber(params) {
@@ -25,7 +29,9 @@ function findMinNumber(params) {
             min = params[i];
         }
     }
-    document.getElementById("result").innerText = "Minimum number in array: " + min;
+    const result = "Minimum number in array: " + min;
+    document.getElementById("result").innerText = result;
+    console.log(result);
 }
 
 function printArrayReverse(params) {
@@ -33,7 +39,9 @@ function printArrayReverse(params) {
     for (let i = params.length - 1; i >= 0; i--) {
         reversedArray.push(params[i]);
     }
-    document.getElementById("result").innerText = "Array in reverse order: " + reversedArray.join(", ");
+    const result = "Array in reverse order: " + reversedArray.join(", ");
+    document.getElementById("result").innerText = result;
+    console.log(result);
 }
 
 function printEvenNumbers(params) {
@@ -43,7 +51,9 @@ function printEvenNumbers(params) {
             evenNumbers.push(params[i]);
         }
     }
-    document.getElementById("result").innerText = "Even numbers in array: " + evenNumbers.join(", ");
+    const result = "Even numbers in array: " + evenNumbers.join(", ");
+    document.getElementById("result").innerText = result;
+    console.log(result);
 }
 
 function printSumOfArray(params) {
@@ -51,7 +61,9 @@ function printSumOfArray(params) {
     for (let i = 0; i < params.length; i++) {
         sum += params[i];
     }
-    document.getElementById("result").innerText = "Sum of the array: " + sum;
+    const result = "Sum of the array: " + sum;
+    document.getElementById("result").innerText = result;
+    console.log(result);
 }
 
 function fizzBuzz() {
@@ -67,10 +79,14 @@ function fizzBuzz() {
             result.push(i);
         }
     }
-    document.getElementById("result").innerText = result.join(", ");
+    const resultString = result.join(", ");
+    document.getElementById("result").innerText = resultString;
+    console.log(resultString);
 }
 
 function showFunctionCode(funcName, func) {
     const funcCode = func.toString();
-    document.getElementById("functionCode").innerText = `${funcName}:\n${funcCode}`;
+    const result = `${funcName}:\n${funcCode}`;
+    document.getElementById("functionCode").innerText = result;
+    console.log(result);
 }
