@@ -30,3 +30,18 @@ button:active {
     transform: scale(1);
     background-color: #388e3c;
 }
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: #333;
+    width: 80%;
+    text-align: center;
+    max-width: 600px;
+    word-wrap: break-word;
+}
