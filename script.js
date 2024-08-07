@@ -69,3 +69,8 @@ function fizzBuzz() {
     }
     document.getElementById("result").innerText = result.join(", ");
 }
+
+function showFunctionCode(funcName, func) {
+    const funcCode = func.toString();
+    document.getElementById("functionCode").innerText = `${funcName}:\n${funcCode}`;
+}

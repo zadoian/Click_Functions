@@ -10,14 +10,18 @@
 
 <body>
     <h1>First open Console in the inspect section</h1>
-    <button onclick="isSumGreaterThan100(array)">Is Sum Greater Than 100</button>
-    <button onclick="findMaxNumber(array)">Find Maximum Number</button>
-    <button onclick="findMinNumber(array)">Find Minimum Number</button>
-    <button onclick="printArrayReverse(array)">Print Array in Reverse</button>
-    <button onclick="printEvenNumbers(array)">Print Even Numbers</button>
-    <button onclick="printSumOfArray(array)">Print Sum of Array</button>
-    <button onclick="fizzBuzz()">FizzBuzz</button>
+    <h2>let array = [1, 2, 3, 4, 5, 10, 20, 30, 40, 50]</h2>
+    <div class="buttons">
+        <button onclick="showFunctionCode('isSumGreaterThan100', isSumGreaterThan100); isSumGreaterThan100(array)">Is Sum Greater Than 100</button>
+        <button onclick="showFunctionCode('findMaxNumber', findMaxNumber); findMaxNumber(array)">Find Maximum Number</button>
+        <button onclick="showFunctionCode('findMinNumber', findMinNumber); findMinNumber(array)">Find Minimum Number</button>
+        <button onclick="showFunctionCode('printArrayReverse', printArrayReverse); printArrayReverse(array)">Print Array in Reverse</button>
+        <button onclick="showFunctionCode('printEvenNumbers', printEvenNumbers); printEvenNumbers(array)">Print Even Numbers</button>
+        <button onclick="showFunctionCode('printSumOfArray', printSumOfArray); printSumOfArray(array)">Print Sum of Array</button>
+        <button onclick="showFunctionCode('fizzBuzz', fizzBuzz); fizzBuzz()">FizzBuzz</button>
+    </div>
     <div id="result" class="result"></div>
+    <div id="functionCode" class="function-code"></div>
     <script src="script.js"></script>
 </body>
 

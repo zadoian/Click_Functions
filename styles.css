@@ -4,9 +4,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -31,8 +41,7 @@ button:active {
     background-color: #388e3c;
 }
 
-.result {
-    margin-top: 20px;
+.result, .function-code {
     padding: 20px;
     background-color: #ffffff;
     border: 2px solid #4caf50;
@@ -41,7 +50,13 @@ button:active {
     font-size: 18px;
     color: #333;
     width: 80%;
-    text-align: center;
     max-width: 600px;
     word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.function-code {
+    font-size: 14px;
+    white-space: pre-wrap;
+    max-width: 800px;
 }
